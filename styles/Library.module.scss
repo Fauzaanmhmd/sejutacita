@@ -1,0 +1,259 @@
+@import "./utils/utils.scss";
+
+.navbar
+{
+  width: 100%;
+  height: 50px;
+  padding: 1rem 0 1rem 1rem;
+
+  h2
+  {
+    margin-left: 16px;
+  }
+}
+
+.iconBack
+{
+  display: flex;
+  margin-left: 10px;
+  svg
+  {
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+  }
+}
+
+.inputSearchContainer
+{
+  flex-grow: 1;
+  margin-left: 1rem;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 45px;
+
+  input
+  {
+    width: 100%;
+    height: 30px;
+    padding-left: 2rem;
+    border-radius: 5px;
+    border: 1px solid $silver;
+  }
+
+  svg
+  {
+    display: block;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    cursor: pointer;
+  }
+
+ 
+}
+
+.inputSearchContent
+{
+  display: flex;
+  align-items: center;
+    
+  button
+    {
+    width: 15%;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 40px 0 30px;
+    border: 1px solid $silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p
+      {
+      margin-left: 5px;
+    }
+
+    svg
+      {
+      margin-right: 5px;
+    }
+  }
+}
+
+.toggle
+{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.Tabs
+{
+  display: flex;
+  justify-content: center;
+}
+
+.activeTabs
+{
+  border-bottom: 5px solid blue;
+
+  h3
+  {
+    color: $blue;
+  }
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000009c;
+  left: 0;
+  z-index: 1000;
+  flex-direction: column;
+}
+  
+.modalContent
+  {
+  width: 400px;
+  height: fit-content;
+  padding-left: -5px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+
+  h5
+    {
+    cursor: pointer;
+  }
+  
+  button
+    {
+    width: 80%;
+    height: 30px;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;      
+    border: none;
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+  }
+}
+  
+.modalHeader {
+  
+  position: relative;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  
+  h2
+    {
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+  
+  h5
+    {
+    margin-right: 1rem;
+    color: $blue;
+  }
+    
+}
+  
+.modalContaint
+  {    
+  input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 3px;
+    cursor: pointer;
+  }
+    
+  input[type="radio"]:checked {
+    background-color: #555555;
+  }
+}
+  
+.radioButton1
+  {
+  display: flex;
+  justify-content: left;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+  
+.radioButton2
+  {
+  display: flex;
+  justify-content: left;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.nav {
+  width: 60%;
+  margin: 0 auto .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItem
+{
+  cursor: pointer;
+  border-bottom: 1px solid $cream;
+}
+
+.active
+{
+  border-bottom: 1px solid blue;
+}
+
+.container
+{
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 765px) {
+  
+  .modalContent
+  {
+    width: 300px;
+  }
+
+  .inputSearchContent
+    {  
+    button
+      {
+      margin-right: 10px;
+      margin-left: 10px;
+
+      p
+        {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .inputSearchContainer
+    {
+    margin-left: 10px;
+  }
+}

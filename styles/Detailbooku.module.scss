@@ -1,0 +1,312 @@
+@import "./utils/utils.scss";
+
+.navbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: $white;
+  width: 100%;
+  height: 50px;
+  padding: 0 2rem ;
+}
+
+.iconBack
+{
+  margin-left: -1rem;
+  flex-grow: 1;
+  svg
+  {
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+  }
+}
+
+.share
+{
+  margin-right: 2rem;
+  svg
+  {
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+  }
+}
+
+.btnShare
+{
+  border: none;
+  background: none;
+}
+
+.save
+{
+  svg
+  {
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+  }
+}
+
+.gambarBuku
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  img{
+    width: 300px;
+    height: auto;
+  }
+}
+
+.button 
+{
+  display: flex;
+  justify-content: center;
+
+  button
+  {
+    margin: 20px 30px;
+    width: 200px;
+    height: 40px;
+  }
+}
+
+.buttonDengar
+{
+  background-color: $white;
+}
+
+.buttonBaca
+{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: $blue;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+  svg
+  {
+    width: 2em;
+    height: 2em;
+    margin-right:10px;
+  }
+
+  p
+  {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+.buttonDengar
+{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: $white;
+  border: solid $blue;
+  color: $blue;
+  border-radius: 10px;
+  cursor: pointer;
+
+  svg
+  {
+    width: 2em;
+    height: 2em;
+    margin-right:10px;
+  }
+
+  p
+  {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+.performBuku
+{
+  margin: 30px 40px;
+
+  h3
+  {
+    margin-top: 20px;
+  }
+}
+
+.isiBuku
+{
+  h2
+  {
+    margin-left: 40px;
+  }
+}
+
+.tentangBuku
+{
+  margin-top: 1rem;
+}
+
+.detailIntro
+{
+  margin: 30px 40px;
+  display: flex;
+}
+
+.detailTulisan
+{
+  border-bottom: 1px solid $grey;
+  margin-left: 1rem;
+}
+
+
+.bacaBuku
+{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  svg
+  {
+    width: 2em;
+    height: 2em;
+  }
+
+  h4
+  {
+    margin: 10px 20px 10px 10px;
+  }
+}
+
+.detailBuku{
+  h3
+  {
+    margin-top: 5px;
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000009c;
+  left: 0;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.modalContent
+{
+  width: 400px;
+  height: fit-content;
+  padding-left: -5px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.modalHeader {
+
+  position: relative;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.modalButton
+{
+  display: flex;
+  justify-content: center;
+}
+.buttonStart
+{
+  background-color: $blue;
+  color: $white;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;  
+}
+
+.buttonNanti
+{
+  background-color: $white;
+  color: $blue;
+  border-radius: 10px;
+  border: solid $blue;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.modalSocmed
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.modalTwitter
+{
+  cursor: pointer;
+  svg
+  {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.modalTelegram
+{
+  cursor: pointer;
+  svg
+  {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.modalInstagram
+{
+  cursor: pointer;
+  svg
+  {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.modalFacebook
+{
+  cursor: pointer;
+  svg
+  {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 765px) 
+{
+  .modalContent
+  {
+    width: 300px;
+  }
+}

@@ -1,0 +1,248 @@
+@import "./utils/utils.scss";
+
+.navbar
+{
+  width: 100%;
+  height: 50px;
+  padding: 1rem 0 1rem 1rem;
+
+  h2
+  {
+    margin-left: 16px;
+  }
+}
+
+.inputSearchContainer
+{
+  flex-grow: 1;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 25px;
+
+  input
+  {
+    width: 100%;
+    height: 30px;
+    padding-left: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid $silver;
+  }
+
+  svg
+  {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+  }
+}
+
+.inputSearchContent
+{
+  display: flex;
+
+  button
+  {
+    width: 15%;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 40px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $silver;
+
+    p
+    {
+      margin-left: 5px;
+    }
+
+    svg
+    {
+      margin-right: 5px;
+    }
+   
+  }
+}
+
+.categories
+{
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 1rem;
+  padding: 0 2rem;
+}
+
+.item
+{
+  cursor: pointer;
+
+  img
+    {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000009c;
+  left: 0;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.modalContent
+{
+  width: 400px;
+  height: fit-content;
+  padding-left: -5px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+
+  h5
+  {
+    cursor: pointer;
+  }
+
+  button
+  {
+    width: 80%;
+    height: 30px;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;      
+    border: none;
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.modalHeader {
+
+  position: relative;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+
+  h2
+  {
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+
+  h5
+  {
+    margin-right: 1rem;
+    color: $blue;
+  }
+  
+}
+
+.modalContaint
+{
+  input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 3px;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #555555;
+  }
+}
+
+.radioButton1
+{
+  display: flex;
+  justify-content: left;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.radioButton2
+{
+  display: flex;
+  justify-content: left;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.iconBack
+{
+  display: flex;
+  margin-left: 10px;
+  svg
+  {
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 765px) {
+  .container
+  {
+    grid-template-columns: auto auto;
+  }
+  .inputSearchContainer
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 0px;
+
+    input
+    {
+      width: 250px;
+    }
+
+    button
+    {
+      width: 50px;
+    }
+  }
+  .inputSearchContent
+  {  
+    button
+    {
+      margin-right: 10px;
+      margin-left: 10px;
+
+      p
+      {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .modalContent
+  {
+    width: 300px;
+  }
+}
